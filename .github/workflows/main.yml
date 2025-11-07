@@ -29,3 +29,6 @@ jobs:
           echo "Building app..."
           npm install
           npm run build
+          
+      - name: Use secret
+        run: echo "Using secret: ${{ secrets.API_KEY }}"
